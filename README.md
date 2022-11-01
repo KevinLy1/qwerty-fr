@@ -77,3 +77,5 @@ Add the following somewhere between the <code>variantList</code> tags.
   </configItem>
 </variant>
 ```
+
+Save the file, restart your computer and add the new variant layout.

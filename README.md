@@ -5,7 +5,7 @@ Right Alt, or AltGr, is used as a combination to type french characters.
 
 <h2>Quick overview</h2>
 
-Acute accent : AltGr + W (only works for E).<br>
+Acute accent: AltGr + W (only works for E).<br>
 Grave accent: AltGr + corresponding letter (works for all vowels).<br>
 Cedilla: AltGr + corresponding letter (works for the letter c -> ç).<br>
 Circumflex: AltGr + key above the corresponding letter (works for all vowels).<br>
@@ -15,7 +15,7 @@ Ligature: AltGr + key right the corresponding letter (works for letters o and a 
 <h1>Layout</h1>
 
 <h2>ANSI Layout</h2>
-<img src="qwerty-fr_ansi.png" /><br>
+<img src="qwerty-fr_ansi.png" />
 <h2>ISO Layout</h2>
 <img src="qwerty-fr_iso.png" />
 

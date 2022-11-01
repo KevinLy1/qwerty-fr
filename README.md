@@ -29,9 +29,51 @@ After opening the file in MSKLC, choosing "Project -> Build DLL and Setup Packag
 <h2>macOS</h2>
 
 Download either ANSI or ISO layout files then put them in:<br>
-/Library/Keyboard Layouts/ to install for all users<br>
-~/Library/Keyboard Layouts/ for user-local installation
+<code>/Library/Keyboard Layouts/</code> to install for all users<br>
+<code>~/Library/Keyboard Layouts/</code> for user-local installation
 
 <h2>Linux</h2>
 
-Coming soon.
+<h3>Method 1: Simple installation</h3>
+
+If you do not want to mess around and just want to use the keyboard layout under Linux, I have uploaded my <code>/usr/share/X11/xkb/symbols/us</code> and <code>/usr/share/xkb/rules/evdev.xml</code> files.<br>
+Download those files in the repository (<code>simple_installation</code> folder) and simply replace them.<br>
+Then, restart your computer and add the new variant layout.
+
+<img src="./linux/kde_example.png" /><br>
+<em>Example with KDE</em>
+
+<h3>Method 2: Manual installation</h3>
+
+Download the file <code>qwerty-fr</code> in the <code>manual_installation</code> folder.
+Copy paste the content at the end of <code>/usr/share/X11/xkb/symbols/us</code> and save.<br><br>
+
+Then, edit <code>/usr/share/xkb/rules/evdev.xml</code> and look for:
+
+```xml
+<layout>
+  <configItem>
+    <name>us</name>
+        <!-- Keyboard indicator for English layouts -->
+      <shortDescription>en</shortDescription>
+      <description>English (US)</description>
+      <languageList>
+        <iso639Id>eng</iso639Id>
+      </languageList>
+  </configItem>
+  <variantList>
+
+  ...
+
+  </variantList>
+```
+
+Add the following somewhere between the <code>variantList</code> tags.
+```xml
+<variant>
+  <configItem>
+    <name>qwerty-fr</name>
+    <description>QWERTY (French)</description>
+  </configItem>
+</variant>
+```

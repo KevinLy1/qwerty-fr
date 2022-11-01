@@ -1,0 +1,58 @@
+partial alphanumeric_keys
+xkb_symbols "qwerty-fr" {
+    include "us(basic)"
+    name[Group1]= "QWERTY (French)";
+	include "level3(ralt_switch)"
+
+	key <AE01> { [ 1, U0021, U00a1, U00a4 ] };
+	key <AE02> { [ 2, U0040, U201c, U201d ] };
+	key <AE03> { [ 3, U0023, U00ea, U00ca ] };
+	key <AE04> { [ 4, U0024, U20ac, U00a3 ] };
+	key <AE05> { [ 5, U0025, U00a5, U2030 ] };
+	key <AE06> { [ 6, U005e, U0177, U0176 ] };
+	key <AE07> { [ 7, U0026, U00fb, U00db ] };
+	key <AE08> { [ 8, U002a, U00ee, U00ce ] };
+	key <AE09> { [ 9, U0028, U00f4, U00d4 ] };
+	key <AE10> { [ 0, U0029, U221e, U2122 ] };
+	key <AE11> { [ U002d, U005f, U2013, U2014 ] };
+	key <AE12> { [ U003d, U002b, U2260, U00b1 ] };
+	key <AD01> { [ q, Q, U00e2, U00c2 ] };
+	key <AD02> { [ w, W, U00e9, U00c9 ] };
+	key <AD03> { [ e, E, U00e8, U00c8 ] };
+	key <AD04> { [ r, R, U00ae, U00a9 ] };
+	key <AD05> { [ t, T, U03c4, U03a4 ] };
+	key <AD06> { [ y, Y, U1ef3, U1ef2 ] };
+	key <AD07> { [ u, U, U00f9, U00d9 ] };
+	key <AD08> { [ i, I, U00ec, U00cc ] };
+	key <AD09> { [ o, O, U00f2, U00d2 ] };
+	key <AD10> { [ p, P, U0153, U0152 ] };
+	key <AD11> { [ U005b, U007b, U00ab, U2039 ] };
+	key <AD12> { [ U005d, U007d, U00bb, U203a ] };
+	key <AC01> { [ a, A, U00e0, U00c0 ] };
+	key <AC02> { [ s, S, U00e6, U00c6 ] };
+	key <AC03> { [ d, D, U00eb, U00cb ] };
+	key <AC04> { [ f, F, U03c9, U03a9 ] };
+	key <AC05> { [ g, G, U03b3, U0393 ] };
+	key <AC06> { [ h, H, U00ff, U0178 ] };
+	key <AC07> { [ j, J, U00fc, U00dc ] };
+	key <AC08> { [ k, K, U00ef, U00cf ] };
+	key <AC09> { [ l, L, U00f6, U00d6 ] };
+	key <AC10> { [ U003b, U003a, U00b6, U00b0 ] };
+	key <AC11> { [ U0027, U0022, U00b4, U00a8 ] };
+	key <TLDE> { [ U0060, U007e, NoSymbol, NoSymbol ] };
+	key <BKSL> { [ U005c, U007c, U00ac, U00a6 ] };
+	key <AB01> { [ z, Z, U00e4, U00c4 ] };
+	key <AB02> { [ x, X, U00d7, U00f7 ] };
+	key <AB03> { [ c, C, U00e7, U00c7 ] };
+	key <AB04> { [ v, V, U03b1, U0391 ] };
+	key <AB05> { [ b, B, U03b2, U0392 ] };
+	key <AB06> { [ n, N, U00f1, U00d1 ] };
+	key <AB07> { [ m, M, U00b5, U039c ] };
+	key <AB08> { [ U002c, U003c, U2264, NoSymbol ] };
+	key <AB09> { [ U002e, U003e, U2265, NoSymbol ] };
+	key <AB10> { [ U002f, U003f, U00bf, U00a7 ] };
+	key <SPCE> { [ U0020, U0020, NoSymbol, NoSymbol ] };
+	key <LSGT> { [ U005c, U007c, U00ac, U00a6 ] };
+	key <KPDL> { [ U002e, U002e, NoSymbol, NoSymbol ] };
+
+};

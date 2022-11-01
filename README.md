@@ -10,18 +10,17 @@ Grave accent: AltGr + corresponding letter (works for all vowels).<br>
 Cedilla: AltGr + corresponding letter (works for the letter c -> ç).<br>
 Circumflex: AltGr + key above the corresponding letter (works for all vowels).<br>
 Diaeresis: AltGr + key below the corresponding letter (works for all vowels).<br>
-Ligature: AltGr + key right the corresponding letter (works for letters o and a -> œ and æ).<br><br>
+Ligature: AltGr + key right the corresponding letter (works for letters o and a -> œ and æ).
 
 <h1>Layout</h1>
 
-<img src="qwerty-fr.png" width="60%" height="60%" />
-<br><br>
+<img src="qwerty-fr.png" />
 
 <h1>How to build / install</h1>
 
 <h2>Windows</h2>
 
-Open the layout file with Microsoft Keyboard Layout Creator (MSKLC) tool, which Microsoft distributes for free.
+Open the layout file with Microsoft Keyboard Layout Creator (MSKLC) tool, which Microsoft distributes for free.<br>
 After opening the file in MSKLC, choosing "Project -> Build DLL and Setup Package" will create an installer that can be used to add this layout to Windows.
 
 <h2>macOS</h2>

@@ -34,21 +34,21 @@ Download either ANSI or ISO layout files then put them in:<br>
 
 <h2>Linux</h2>
 
-<h3>Method 1: Simple installation</h3>
+<h3>Method 1: Simple installation (not recommended, except for Vanilla Ubuntu 20.04)</h3>
 
 If you do not want to mess around and just want to use the keyboard layout under Linux, I have uploaded my <code>/usr/share/X11/xkb/symbols/us</code> and <code>/usr/share/xkb/rules/evdev.xml</code> files.<br>
-Download those files in the repository (<code>simple_installation</code> folder) and simply replace them.<br>
-Then, restart your computer and add the new variant layout.
+<strong>Please note that those two files originate from Vanilla Ubuntu 20.04 (more precisely the Kubuntu flavour). Since all distributions of Linux are different, the base files might not be the same, so I would recommend the method 2 below instead.</strong><br>
+1. Download the files in the repository (<code>simple_installation</code> folder) and simply replace them.<br>
+2. Restart your computer and add the new variant layout.
 
 <img src="./linux/kde_example.png" /><br>
 <em>Example with KDE</em>
 
-<h3>Method 2: Manual installation</h3>
+<h3>Method 2: Manual installation (recommended)</h3>
 
-Download the file <code>qwerty-fr</code> in the <code>manual_installation</code> folder.
-Copy paste the content at the end of <code>/usr/share/X11/xkb/symbols/us</code> and save.<br><br>
-
-Then, edit <code>/usr/share/xkb/rules/evdev.xml</code> and look for:
+1. Download the file <code>qwerty-fr</code> in the <code>manual_installation</code> folder.
+2. Copy paste the content at the end of <code>/usr/share/X11/xkb/symbols/us</code> and save.<br><br>
+3. Edit <code>/usr/share/X11/xkb/rules/evdev.xml</code> and look for:
 
 ```xml
 <layout>
@@ -68,7 +68,7 @@ Then, edit <code>/usr/share/xkb/rules/evdev.xml</code> and look for:
   </variantList>
 ```
 
-Add the following somewhere between the <code>variantList</code> tags.
+4. Add the following somewhere between the <code>variantList</code> tags.
 ```xml
 <variant>
   <configItem>
@@ -78,4 +78,4 @@ Add the following somewhere between the <code>variantList</code> tags.
 </variant>
 ```
 
-Save the file, restart your computer and add the new variant layout.
+5. Save the file, restart your computer and add the new variant layout.
